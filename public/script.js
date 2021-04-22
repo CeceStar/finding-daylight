@@ -107,7 +107,9 @@ async function getAPIGeoDataSource(x, y) {
   let lat = x;
   let lng = y;
 
-  await fetch("https://finding-daylight.web.app/", {
+  const getGeoDataSource = Firebase.functions().httpsCallable('')
+
+  await fetch("https://us-central1-finding-daylight.cloudfunctions.net/api/", {
     method: "post",
     headers: {
       Accept: "application/json",

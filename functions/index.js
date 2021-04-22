@@ -39,31 +39,10 @@ app.post("/", (req, res) => {
   );
 });
 
-// app.get('/', (req, res) => {
-//     const lat = 59.31167416666667;
-//     const long = 18.0235053333333;
-//     const url = "https://api.geodatasource.com/city";
-//     const apiKey = "SYB4ORNCL6KQTWYWUEE83XDWPVXYQNSZ";
-
-//     let requestURL = url.concat("?key=",apiKey,"&lat=", lat, "&lng=", long);
-
-//     request(
-//         {
-//           url: requestURL
-//         },
-//         (error, response, body) => {
-//         if (error || response.statusCode !== 200) {
-//           return res.status(500).json({ type: 'error', message: err.message });
-//         }
-//         res.json(JSON.parse(body));
-//       }
-//     )
-//   });
-
 // app.listen(3000, function (err) {
 //   if (!err) {
 //     console.log("app is running on port 3000");
 //   }
 // });
 
-exports.helloWorld = functions.https.onRequest(app);
+exports.api = functions.https.onRequest(app);
