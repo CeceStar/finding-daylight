@@ -39,10 +39,4 @@ app.post("/", (req, res) => {
   );
 });
 
-// app.listen(3000, function (err) {
-//   if (!err) {
-//     console.log("app is running on port 3000");
-//   }
-// });
-
 exports.api = functions.https.onRequest(app);
