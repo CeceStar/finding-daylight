@@ -9,6 +9,7 @@ I found out that I could host this backend code in Firebase through firebase fun
 https://finding-daylight.firebaseapp.com/
 
 This is how the app looks like:
+
 ![Pic of how it looks like](./public/images/picOfFindingDaylight.png)
 
 Its written in vanilla JS in autum 2020.
