@@ -12,3 +12,6 @@ This is how the app looks like:
 
 
 Its written in vanilla JS in autum 2020.
+
+!SPOILER ALERT!
+There is a hidden feature too. Click on the sun to get some... advice I guess haha!
