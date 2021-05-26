@@ -1,4 +1,4 @@
-# finding-daylight
+# Finding Daylight
 An app to help you track when its daylight where you are. Helpfull in Sweden so you dont miss to go out and get some D-vitamins! :)
 
 This is how the app looks like
