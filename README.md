@@ -9,7 +9,7 @@ Its written in vanilla JS in autum 2020.
 
 Check it out here: https://finding-daylight.firebaseapp.com/ :)
 
-## Process
+### Process
 
 This project was made together with Emma Scott-Allen (https://github.com/emmy-codes), Sofia Darke(https://github.com/sofiadarkeweb) and Aleksandra Astaroth(https://github.com/aleksandraAstaroth).
 
