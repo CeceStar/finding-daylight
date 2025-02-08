@@ -820,6 +820,10 @@
   .twilight3::after {
     border-bottom: 370px solid var(--special-dark-peach);
   }
+
+  .bottom-text {
+    text-align: end;
+  }
   
   @media only screen and (max-height: 670px) {
     .mountain1 {
