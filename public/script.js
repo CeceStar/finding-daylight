@@ -107,23 +107,27 @@ async function getAPIGeoDataSource(x, y) {
   let lat = x;
   let lng = y;
 
-  await fetch("https://us-central1-finding-daylight.cloudfunctions.net/api/", {
-    method: "post",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    //make sure to serialize your JSON body
-    body: JSON.stringify({
-      lat: lat,
-      lng: lng,
-    }),
-  })
+  //await fetch("https://us-central1-finding-daylight.cloudfunctions.net/api/", {
+  // method: "post",
+  // headers: {
+  //   Accept: "application/json",
+  //  "Content-Type": "application/json",
+  // },
+  //
+  // body: JSON.stringify({
+  //  lat: lat,
+  //  lng: lng,
+  //  }),
+  // })
+
+  await fetch(
+    `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&time_format=24`
+  )
     .then((response) => response.json())
     .then((data) => {
       sunset = data.sunset;
       sunrise = data.sunrise;
-      city = data.city;
+      city = data.timezone;
       cityPrint.innerText = "Location: " + city;
       checkTime();
       heading.classList.remove("hidden");
